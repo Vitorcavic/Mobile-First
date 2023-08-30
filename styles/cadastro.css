@@ -1,0 +1,101 @@
+.cadastro {
+    background: var(--branco);
+    color: var(--azul-degrade);
+    text-align: left;
+    padding: 2em;
+}
+
+.cadastro__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cadastro__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.cadastro__email {
+    background-color: transparent;
+    color: var(--azul);
+    margin-left: 5em;
+    width: 80%;
+    height: 100%;
+    padding: 1em 0;
+}
+
+.cadastro__email::placeholder {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--azul-degrade);
+}
+
+.cadastro__container {
+    position: relative;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 100%;
+}
+
+.cadastro__container img {
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width: 1024px) {
+    .cadastro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 9em 3em 9em;
+    }
+
+    .cadastro__escritas {
+        width: 50%;
+    }
+
+    .cadastro__titulo {
+        font-size: 24px;
+        padding-bottom: 0.5em;
+    }
+
+    .cadastro__texto {
+        font-size: 16px;
+    }
+
+    .cadastro__email {
+        width: 70%;
+        height: 100%;
+    }
+
+    .cadastro__container {  
+        margin-left: 6em;
+        width: 50%;
+    }
+
+    .cadastro__email::placeholder {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cadastro {
+        padding: 4em 15em;
+    }
+
+    .cadastro__titulo {
+        padding-bottom: 0;
+    }
+
+    .cadastro__container {
+        width: 30%;
+        margin-left: 0;
+    }
+
+    .cadastro__texto {
+        width: 70%;
+    }
+}
